@@ -1,0 +1,5 @@
+ :root { font-family: Inter, system-ui, sans-serif; color: #18212f; background: #eef3f8; }
+ * { box-sizing: border-box; }
+ body { margin: 0; line-height: 1.6; }
+ header, main, footer {width: min(100% - 2rem, 980px); margin-inline: auto; }
+ header { padding-block: 2rem 1rem; }
