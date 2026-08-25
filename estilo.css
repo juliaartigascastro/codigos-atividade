@@ -3,3 +3,10 @@
  body { margin: 0; line-height: 1.6; }
  header, main, footer {width: min(100% - 2rem, 980px); margin-inline: auto; }
  header { padding-block: 2rem 1rem; }
+ nav ul { display: flex; flex-wrap: wrap; gap: .75rem; padding: 0; list-style: none; }
+ nav a { display: inline-block; 1rem; padding .55rem .8rem; border-radius: .65rem; background: #fff; color: #174a75; text-decoration: none; }
+ section {margin-block: 1rem; padding: 1.25rem; border-radius: 1rem; background: #fff; box-shadow: 0 10px 30px rgba(25,42,70,.08); }
+ article { padding: 1rem; border-left: .3rem solid #3478b8; background: #f5f9fd; }
+ article + article { margin-top: .8rem; }
+ footer { padding-block: 1rem 2rem; color: #4d5a6a; }
+ @media (max-width: 540px) { header, main, footer {widht: min(100% - 1rem, 980px); } section { padding: 1rem; } }
