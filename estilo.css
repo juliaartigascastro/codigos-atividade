@@ -1,12 +1,44 @@
- :root { font-family: Inter, system-ui, sans-serif; color: #18212f; background: #eef3f8; }
- * { box-sizing: border-box; }
- body { margin: 0; line-height: 1.6; }
- header, main, footer {width: min(100% - 2rem, 980px); margin-inline: auto; }
- header { padding-block: 2rem 1rem; }
- nav ul { display: flex; flex-wrap: wrap; gap: .75rem; padding: 0; list-style: none; }
- nav a { display: inline-block; 1rem; padding .55rem .8rem; border-radius: .65rem; background: #fff; color: #174a75; text-decoration: none; }
- section {margin-block: 1rem; padding: 1.25rem; border-radius: 1rem; background: #fff; box-shadow: 0 10px 30px rgba(25,42,70,.08); }
- article { padding: 1rem; border-left: .3rem solid #3478b8; background: #f5f9fd; }
- article + article { margin-top: .8rem; }
- footer { padding-block: 1rem 2rem; color: #4d5a6a; }
- @media (max-width: 540px) { header, main, footer {widht: min(100% - 1rem, 980px); } section { padding: 1rem; } }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.container {
+  width: min(92%, 760px);
+  margin: 40px auto;
+}
+
+.card {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 24px;
+  border: 2px solid #dbe4ef;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+}
+
+.card.destaque {
+  border-width: 4px;
+  padding: 28px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card strong {
+  display: block;
+  martgin-block: 8px;
+  font-size: 2rem;
+}
+
+.card p {
+  margin-bottom: 0;
+}

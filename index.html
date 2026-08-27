@@ -2,66 +2,35 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Central de chamados para atendimento de suporte técnico.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <title> Central de chamados | Suporte DS</title>
-  <link rel="stylesheet" href="estilo.css">
+  <title>Exercício</title>
 </head>
-<body> 
-    <header>
-        <h1>Central de Chamados</h1>
-        <p>Acompanhe solicitações e prioridades da equipe de suporte.</p>
-        
-        <nav aria-label="Navegação principal">
-           <ul>
-               <li><a href="#resumo">Resumo</a></li>
-               <li><a href="#chamados">Chamados recentes</a></li>
-               <li><a href="#orientações">Orientações</a></li>
-           </ul>
-        </nav>
-     </header>
+<body>
+  <main class="container">
+    <h1>Resumo do Sistemas</h1>
+    <p>Observe como conteúdo, padding, border e margin formam cada caixa.</p>
 
-     <main>
-         <section id="resumo" aria-labelledby="titulo-resumo">
-             <h2 id="titulo-resumo">Resumo do atendimento</h2>
-             <ul>
-                  <li>3 chamados em análise</li>
-                  <li>2 chamados aguardando resposta</li>
-                  <li>5 chamados concluídos hoje</li>
-              </ul>
-          </section>
+    <section aria-label="Indicadores do sistema">
+      <article class="card">
+        <h2>Usuários</h2>
+        <strong>128</strong>
+        <p>Contas ativas</p>
+      </article>
 
-          <section id="chamados" aria-labelledby="titulo-chamados">
-              <h2 id="titulo-chamados">Chamados recentes</h2>
-         
-              </article>
-                   <h3>Computador sem acesso á internet</h3>
-                   <p><strong>Setor:</strong> Laboratório 02</p>
-                   <p>Verificar cabo de rede, configuração e disponibilidade do ponto.</p>
-              </article>
+      <article class="card destaque">
+        <h2>Chamados</h2>
+        <strong>34</strong>
+        <p>Em atendimento</p>
+      </article>
 
-              </article>
-                   <h3>Instalação do ambiente Python</h3>
-                   <p><strong>Setor:</strong> Desenvolvimento de Sistemas</p>
-                   <p><strong>Prioridade:</strong> Média</p>
-                   <p>Prepara Python, extensão do VS code e teste de execução no terminal.</p>
-               </article>
-           </section>
-
-           </section id="orientações" aria-labelledby="titulo-orientações">
-                <h2 id="titulo-orientações">Orientações para abrir um chamado</h2>
-                <ol>
-                    <li>Descreva o problema com clareza.</li>
-                    <li>Informe o equipamento e o local.</li>
-                    <li>Registre mensagens de erro ou testes já realizados.</li>
-                </ol>
-            </section>
-        </main>
-
-        <footer>
-            <p>Projeto educacional - 3° DS . Programação no Desenvolvimento de Sistemas</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
-    </html>
+      <article class="card">
+        <h2>Alertas</h2>
+        <strong>7</strong>
+        <p>Pendências críticas</p>
+       </article>
+      </section>
+     </main>
+  <script src="script.js"><\/script>
+</body>
+</html>
