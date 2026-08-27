@@ -1,2 +1,7 @@
-// O foco deste exercício é css Box Model
-console.info('Exercício 06: cards carregados.);
+const botaoSair = document.querySelector('#sair');
+
+if (botaoSair) {
+  botaoSair.addEventListener('click', () => {
+    alert('ação de saída acionada.');
+  });
+}

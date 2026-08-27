@@ -2,43 +2,47 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+body{
+  margin:0;
   font-family: Arial, sans-serif;
-  background: #f4f7fb;
+  background: #f8fafc;
   color: #172033;
 }
 
-.container {
-  width: min(92%, 760px);
-  margin: 40px auto;
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 24px;
+  background: #0f172a;
+  color: #fff;
 }
 
-.card {
-  width: 100%;
-  margin: 0 0 20px;
-  padding: 24px;
-  border: 2px solid #dbe4ef;
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+.toolbar nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.card.destaque {
-  border-width: 4px;
-  padding: 28px;
+.toolbar button {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.card h2 {
-  margin-top: 0;
+main {
+  padding: 30px;
 }
 
-.card strong {
-  display: block;
-  martgin-block: 8px;
-  font-size: 2rem;
-}
+@media (max-width: 650px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-.card p {
-  margin-bottom: 0;
+  .toolbar nav {
+    justify-content: center;
+  }
 }
