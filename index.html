@@ -7,22 +7,38 @@
   <title>Exercício</title>
 </head>
 <body>
-  <header class="toolbar">
-    <strong class="marca">AGV Admin</strong>
+  <div class="dashboard">
+    <header>
+      <h1>Dashboard</h1>
+    </header>
 
-    <nav aria-label="Ferramentas principais">
-      <button type="button">Início</button>
-      <button type="button">Usuários</button>
-      <button type="button">Relatórios</button>
+    <aside>
+      <nav aria-label="Menu lateral">
+      <a href="#inicio">Início</a>
+      <a href="#usuarios">Usuários</a>
+      <a href="#relatorios">Relatórios</a>
     </nav>
+  </aside>
 
-    <button type="button" id="sair">Sair</button>
-  </header>
-
-  </main>
-     <h1>Área administrativa</h1>
-     <p>A barra superior foi organizada com Flexbox.</p>
+  <main id="inicio">
+    <section class="cards" aria-label="Indicadores principais">
+      <article>
+        <h2>Vendas</h2>
+        <strong>R$ 8.420</strong>
+       </article>
+       <article id="usuarios">
+         <h2>Usuários</h2>
+         <strong>128</strong>
+       </article>
+       <article id ="relatorios">
+         <h2>Tickets</h2>
+         <strong>34</strong>
+       </article>
+     </section>
    </main>
+
+   <footer>Exercício 08 - CSS Grid</footer>
+ </div>
   <script src="script.js"><\/script>
 </body>
 </html>

@@ -1,7 +1,2 @@
-const botaoSair = document.querySelector('#sair');
-
-if (botaoSair) {
-  botaoSair.addEventListener('click', () => {
-    alert('ação de saída acionada.');
-  });
-}
+// O foco deste execício é CSS Grid.
+console.info('Exercício 08: dashbord carregado.');
